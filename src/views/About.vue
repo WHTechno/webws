@@ -158,6 +158,16 @@ export default {
           experience:
             "Creating user-friendly frontends and analyzing software to keep things fast, functional, and fun to use.",
         },
+        {
+          name: "Taka",
+          position: "Admin & Programmer",
+          image: require("@/assets/image-team/taka.jpg"),
+          telegram: "https://t.me/takadotdev",
+          twitter: "https://x.com/kazutora_nichh",
+          youtube: "",
+          github: "https://github.com/takachan0012",
+          experience: "JavaScript and Web3 enthusiast who enjoys building decentralized applications using Hardhat."
+        },
       ],
     };
   },
