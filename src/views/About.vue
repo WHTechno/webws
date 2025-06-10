@@ -127,15 +127,14 @@ export default {
             "Building modern websites while engaging audiences through social media, digital marketing, and tech innovations.",
         },
         {
-          name: "One Nov",
-          position: "Admin & Programmer",
+          name: "OneNov",
+          position: "Troubleshooting Node",
           image: require("@/assets/image-team/onenov.jpg"),
           telegram: "https://t.me/OneNov02",
-          twitter: "",
+          twitter: "https://x.com/Surya021292",
           youtube: "",
-          github: "",
-          experience:
-            "Managing systems, troubleshooting issues, and developing efficient code to streamline workflows and optimize performance.",
+          github: "https://github.com/OneNov0209",
+          experience: "learn and earn",
         },
         {
           name: "Jamal",
