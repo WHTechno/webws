@@ -169,7 +169,7 @@ export default {
             project.name
               .toLowerCase()
               .includes(this.searchQuery.toLowerCase()) &&
-            project.status === this.currentStatus
+            project.status === this.currentStatus,
         )
         .slice(0, this.displayedCount);
     },
@@ -177,7 +177,7 @@ export default {
       return this.projects.filter(
         (project) =>
           project.name.toLowerCase().includes(this.searchQuery.toLowerCase()) &&
-          project.status === this.currentStatus
+          project.status === this.currentStatus,
       ).length;
     },
   },

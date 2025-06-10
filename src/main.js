@@ -29,7 +29,7 @@ library.add(
   faSync,
   faCalendarAlt,
   faSyncAlt,
-  faClock
+  faClock,
 );
 
 const app = createApp(App);
