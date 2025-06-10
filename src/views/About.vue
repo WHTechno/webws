@@ -2,9 +2,7 @@
   <div class="container mx-auto px-4 py-16 max-w-5xl">
     <!-- Breadcrumb -->
     <nav class="text-gray-400 text-sm mb-4">
-      <router-link to="/" class="hover:text-purple-400 transition"
-        >Home</router-link
-      >
+      <router-link to="/" class="hover:text-purple-400 transition">Home</router-link>
       ›
       <span class="text-gray-200">About</span>
     </nav>
@@ -158,15 +156,17 @@ export default {
           github: "https://github.com/WHTechno",
           experience:
             "Creating user-friendly frontends and analyzing software to keep things fast, functional, and fun to use.",
-       },
+        },
       ],
     };
+  },
+  mounted() {
+    console.log("Team members count:", this.team.length);
   },
 };
 </script>
 
 <style scoped>
-/* Hover effect for icons */
 a:hover {
   text-decoration: none;
 }
