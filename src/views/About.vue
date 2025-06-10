@@ -148,6 +148,16 @@ export default {
           experience:
             "Balancing administrative tasks with content creation, engaging audiences, and growing online communities effectively.",
         },
+        {
+          name: "WHTech",
+          position: "Frontend Development & Software Analyst",
+          image: require("@/assets/image-team/whtech.jpg"),
+          telegram: "https://t.me/EnyongBae",
+          twitter: "https://x.com/WHTechno",
+          github: "https://github.com/WHTechno",
+          experience:
+            "Creating user-friendly frontends and analyzing software to keep things fast, functional, and fun to use.",
+       },
       ],
     };
   },
