@@ -2,7 +2,9 @@
   <div class="container mx-auto px-4 py-16 max-w-5xl">
     <!-- Breadcrumb -->
     <nav class="text-gray-400 text-sm mb-4">
-      <router-link to="/" class="hover:text-purple-400 transition">Home</router-link>
+      <router-link to="/" class="hover:text-purple-400 transition"
+        >Home</router-link
+      >
       ›
       <span class="text-gray-200">About</span>
     </nav>
@@ -149,7 +151,7 @@ export default {
         {
           name: "WHTech",
           position: "Frontend Development & Software Analyst",
-          image: require("@/assets/image-team/whtech.jpg"),
+          image: require("@/assets/image-team/whtech.jpeg"),
           telegram: "https://t.me/EnyongBae",
           twitter: "https://x.com/WHTechno",
           youtube: "",
