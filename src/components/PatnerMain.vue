@@ -3,7 +3,11 @@
     <!-- Container Grid untuk Logo -->
     <div class="grid grid-cols-3 gap-8 justify-items-center">
       <div v-for="(logo, index) in logos" :key="index" class="logo-wrapper">
-        <img :src="logo" :alt="'Company Logo ' + (index + 1)" class="company-logo" />
+        <img
+          :src="logo"
+          :alt="'Company Logo ' + (index + 1)"
+          class="company-logo"
+        />
       </div>
     </div>
   </div>
@@ -19,10 +23,10 @@ export default {
         require("@/assets/icons/huobi.svg"),
         require("@/assets/icons/okx.svg"),
         require("@/assets/icons/github.svg"),
-        require("@/assets/icons/contabo.svg")
-      ]
+        require("@/assets/icons/contabo.svg"),
+      ],
     };
-  }
+  },
 };
 </script>
 

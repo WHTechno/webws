@@ -17,11 +17,20 @@ import {
   faSync,
   faCalendarAlt,
   faSyncAlt,
-  faClock
+  faClock,
 } from "@fortawesome/free-solid-svg-icons";
 
 // 🚀 Tambahkan ikon ke library FontAwesome
-library.add(faClipboardList, faNetworkWired, faSearch, faCoins, faSync, faCalendarAlt, faSyncAlt, faClock);
+library.add(
+  faClipboardList,
+  faNetworkWired,
+  faSearch,
+  faCoins,
+  faSync,
+  faCalendarAlt,
+  faSyncAlt,
+  faClock
+);
 
 const app = createApp(App);
 app.use(router); // 🚀 Aktifkan Vue Router
@@ -37,6 +46,3 @@ Object.entries(FlowbiteComponents).forEach(([name, component]) => {
 });
 
 app.mount("#app"); // 🚀 Mount Vue App
-
-
-

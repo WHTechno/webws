@@ -34,14 +34,15 @@
 
     <!-- Tabs: Active, Upcoming, Ended -->
     <div class="mt-6 flex justify-center space-x-4">
-      <button 
-        v-for="status in ['active', 'upcoming', 'ended']" 
+      <button
+        v-for="status in ['active', 'upcoming', 'ended']"
         :key="status"
         @click="currentStatus = status"
         class="px-6 py-2 text-sm font-medium rounded-full transition-all"
         :class="{
           'bg-purple-700 text-white': currentStatus === status,
-          'bg-purple-900/30 text-purple-400 hover:bg-purple-800/50': currentStatus !== status
+          'bg-purple-900/30 text-purple-400 hover:bg-purple-800/50':
+            currentStatus !== status,
         }"
       >
         {{ status.charAt(0).toUpperCase() + status.slice(1) }}
@@ -108,38 +109,82 @@ export default {
       currentStatus: "active",
       hoverIndex: null,
       projects: [
-        { name: "Intento", category: "Tech/Community", status: "active", logo: "https://explorer.intento.zone/logos/intento.png" },
-        { name: "Dill", category: "Tech", status: "active", logo: "https://raw.githubusercontent.com/bangpateng/image/main/dill.jpg" },
-        { name: "Hemi", category: "Tech", status: "active", logo: "https://ping.pub/logos/8ball.png" },
-        { name: "Sunrise", category: "Tech/Community", status: "active", logo: "https://ping.pub/logos/andromeda.png" },
-        { name: "Sahara AI", category: "Tech/Community", status: "upcoming", logo: "https://ping.pub/logos/bitsong.svg" },
-        { name: "Nexus", category: "Tech/Community", status: "active", logo: "https://ping.pub/logos/canto.png" },
-        { name: "IOTA", category: "Tech/Community", status: "upcoming", logo: "https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.png" },
-        { name: "Pell", category: "Tech/Community", status: "ended", logo: "https://ping.pub/logos/celestia.png" }
+        {
+          name: "Intento",
+          category: "Tech/Community",
+          status: "active",
+          logo: "https://explorer.intento.zone/logos/intento.png",
+        },
+        {
+          name: "Dill",
+          category: "Tech",
+          status: "active",
+          logo: "https://raw.githubusercontent.com/bangpateng/image/main/dill.jpg",
+        },
+        {
+          name: "Hemi",
+          category: "Tech",
+          status: "active",
+          logo: "https://ping.pub/logos/8ball.png",
+        },
+        {
+          name: "Sunrise",
+          category: "Tech/Community",
+          status: "active",
+          logo: "https://ping.pub/logos/andromeda.png",
+        },
+        {
+          name: "Sahara AI",
+          category: "Tech/Community",
+          status: "upcoming",
+          logo: "https://ping.pub/logos/bitsong.svg",
+        },
+        {
+          name: "Nexus",
+          category: "Tech/Community",
+          status: "active",
+          logo: "https://ping.pub/logos/canto.png",
+        },
+        {
+          name: "IOTA",
+          category: "Tech/Community",
+          status: "upcoming",
+          logo: "https://raw.githubusercontent.com/cosmos/chain-registry/master/cudos/images/cudos.png",
+        },
+        {
+          name: "Pell",
+          category: "Tech/Community",
+          status: "ended",
+          logo: "https://ping.pub/logos/celestia.png",
+        },
       ],
-      displayedCount: 8
+      displayedCount: 8,
     };
   },
   computed: {
     filteredProjects() {
       return this.projects
-        .filter(project => 
-          project.name.toLowerCase().includes(this.searchQuery.toLowerCase()) &&
-          project.status === this.currentStatus
+        .filter(
+          (project) =>
+            project.name
+              .toLowerCase()
+              .includes(this.searchQuery.toLowerCase()) &&
+            project.status === this.currentStatus
         )
         .slice(0, this.displayedCount);
     },
     totalFilteredCount() {
-      return this.projects.filter(project => 
-        project.name.toLowerCase().includes(this.searchQuery.toLowerCase()) &&
-        project.status === this.currentStatus
+      return this.projects.filter(
+        (project) =>
+          project.name.toLowerCase().includes(this.searchQuery.toLowerCase()) &&
+          project.status === this.currentStatus
       ).length;
-    }
+    },
   },
   methods: {
     loadMore() {
       this.displayedCount += 4;
-    }
-  }
+    },
+  },
 };
 </script>

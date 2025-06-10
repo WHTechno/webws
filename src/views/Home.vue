@@ -23,6 +23,6 @@ export default {
     TestnetMain,
     CardMain,
     UserMain,
-  }
+  },
 };
 </script>

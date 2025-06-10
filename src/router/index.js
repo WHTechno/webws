@@ -11,68 +11,67 @@ import Tools from "../views/Tools.vue"; // Import the About component
 import Licensing from "../views/Licensing.vue"; // Import the About component
 import Privacy from "../views/Privacy.vue"; // Import the About component
 
-
 const routes = [
   {
     path: "/",
     name: "Home",
-    component: Home
+    component: Home,
   },
   {
     path: "/testnet",
     name: "Testnet",
-    component: Testnet
+    component: Testnet,
   },
   {
     path: "/testnet/dill",
     name: "Dill",
-    component: Dill
+    component: Dill,
   },
   {
     path: "/testnet/intento",
     name: "Intento",
-    component: Intento
+    component: Intento,
   },
   {
     path: "/testnet/hemi",
     name: "Hemi",
-    component: Hemi
+    component: Hemi,
   },
   {
     path: "/testnet/sunrise",
     name: "Sunrise",
-    component: Sunrise
+    component: Sunrise,
   },
   {
     path: "/about",
     name: "About",
-    component: About
+    component: About,
   },
   {
     path: "/contact",
     name: "Contact",
-    component: Contact
+    component: Contact,
   },
   {
     path: "/tools",
     name: "Tools",
-    component: Tools
+    component: Tools,
   },
   {
     path: "/licensing",
     name: "Licensing",
-    component: Licensing
+    component: Licensing,
   },
   {
     path: "/privacy-policy",
     name: "Privacy",
-    component: Privacy
+    component: Privacy,
   },
 ];
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
 });
 
 export default router;

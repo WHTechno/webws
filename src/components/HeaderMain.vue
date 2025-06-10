@@ -1,8 +1,12 @@
 <template>
-  <section class="relative w-full flex flex-col items-center justify-center text-center py-20 px-6">
+  <section
+    class="relative w-full flex flex-col items-center justify-center text-center py-20 px-6"
+  >
     <!-- Efek Cahaya Ungu -->
     <div class="absolute inset-0 flex justify-center items-end">
-      <div class="w-96 h-96 bg-purple-500 opacity-40 blur-3xl rounded-full"></div>
+      <div
+        class="w-96 h-96 bg-purple-500 opacity-40 blur-3xl rounded-full"
+      ></div>
     </div>
 
     <!-- Konten -->
@@ -17,22 +21,27 @@
 
       <!-- Judul -->
       <h1 class="text-4xl md:text-6xl font-extrabold text-white">
-        Winsnip <span class="text-purple-400">More Than A Leading</span> Blockchain Validator
+        Winsnip
+        <span class="text-purple-400">More Than A Leading</span> Blockchain
+        Validator
       </h1>
 
       <!-- Deskripsi -->
       <p class="mt-4 text-lg text-gray-300">
-        Your Trusted Security Partner Low Fees, High Security, and 24/7 Monitoring
+        Your Trusted Security Partner Low Fees, High Security, and 24/7
+        Monitoring
       </p>
 
       <!-- Tombol CTA -->
       <div class="mt-6 flex justify-center">
         <!-- Tombol "Read the docs" (Lebar Tetap Sama di Semua Perangkat) -->
-        <a 
-          href="/testnet" 
+        <a
+          href="/testnet"
           class="w-50 px-6 py-3 bg-purple-900 text-white font-semibold rounded-full flex items-center justify-center gap-2 shadow-lg hover:bg-purple-800 transition-all"
         >
-          <span class="inline-flex items-center justify-center w-5 h-5 bg-purple-700 rounded-full">
+          <span
+            class="inline-flex items-center justify-center w-5 h-5 bg-purple-700 rounded-full"
+          >
             ⚙
           </span>
           Testnet Portal

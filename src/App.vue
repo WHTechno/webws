@@ -1,8 +1,10 @@
 <template>
-   <!-- Wrapper dengan Warna Solid (Tanpa Gradient) -->
+  <!-- Wrapper dengan Warna Solid (Tanpa Gradient) -->
   <div class="relative bg-[#0a0a1a] min-h-screen w-full">
     <!-- Efek Blur Glow di Bagian Bawah -->
-    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full h-40 bg-purple-500 blur-3xl opacity-30 rounded-t-full"></div>
+    <div
+      class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full h-40 bg-purple-500 blur-3xl opacity-30 rounded-t-full"
+    ></div>
 
     <!-- Navbar -->
     <NavbarMain />
@@ -14,15 +16,14 @@
 
     <!-- Footer -->
     <FooterMain />
-    
   </div>
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 </style>
 
@@ -34,6 +35,6 @@ export default {
   components: {
     NavbarMain,
     FooterMain,
-  }
+  },
 };
 </script>
