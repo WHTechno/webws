@@ -151,7 +151,7 @@ export default {
         {
           name: "WHTech",
           position: "Frontend Development & Software Analyst",
-          image: require("@/assets/image-team/whtech.png"),
+          image: require("@/assets/image-team/jamal.jpg"),
           telegram: "https://t.me/EnyongBae",
           twitter: "https://x.com/WHTechno",
           github: "https://github.com/WHTechno",
