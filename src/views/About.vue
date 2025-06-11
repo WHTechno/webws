@@ -166,8 +166,8 @@ export default {
           twitter: "https://x.com/kazutora_nichh",
           youtube: "",
           github: "https://github.com/takachan0012",
-          experience: 
-            "JavaScript and Web3 enthusiast who enjoys building decentralized applications using Hardhat."
+          experience:
+            "JavaScript and Web3 enthusiast who enjoys building decentralized applications using Hardhat.",
         },
       ],
     };
